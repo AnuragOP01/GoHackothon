@@ -27,7 +27,7 @@ const Navbar = () => {
       <nav className="w-[830px] h-[70px] bg-[#0071D1] rounded-full flex items-center justify-center relative z-50">
         <ul className="flex list-none items-center text-white text-lg space-x-6 mr-5 relative">
           <li className="flex items-center">
-            <NavLink to='/'>
+            <NavLink to='/home'>
             <button className='bg-white text-[#0071D1] px-10 py-2 rounded-full'>
               <FaHome className="text-[25px]" />
             </button>
