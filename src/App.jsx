@@ -1,100 +1,52 @@
 import React from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import shadcnLogo from "/shadcn.svg";
-import jsLogo from "/js.svg";
-import tailWind from "/tailwind.svg";
-import router from "/router.svg";
-import "./App.css";
-import { Card } from "./components/ui/Cards/baseCard/card";
-import MyCard from "./components/ui/Cards/MentorCard";
-import JobCard from "./components/ui/Cards/jobCard";
+import {BrowserRouter,  Routes, Route } from "react-router-dom";
+import Login  from "./components/ui/Login/Login";
+import About from "./Pages/About/About";
+import Carrier from "./Pages/Carrer/Carrier";
+import ContactUs from "./Pages/ContactUs/ContactUs";
+import Home from "./Pages/Home/Home";
+import NavFooter from "./components/NavFooter/NavFooter";
+import Placement from "./Pages/Training/4pProgram/Placement";
+import Preparation from "./Pages/Training/4pProgram/Preparation";
+import Professional from "./Pages/Training/4pProgram/Professional";
+import Project from "./Pages/Training/4pProgram/Project";
+import Workshops from "./Pages/Services/Workshops";
+import Webinar from "./Pages/Services/Webinar";
+import Placements from "./Pages/Services/Placements";
+import Internships from "./Pages/Services/Internships";
 
 function App() {
-  const cardData = {
-    imgUrl: "https://example.com/image.jpg",
-    title: "Card Title",
-    description: "Software Engineer ",
-  };
+
   return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/" element={<NavFooter />}>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/carrier" element={<Carrier />} />
+          <Route path="/contact" element={<ContactUs />} />
 
-    
-    <div className="bg-white h-screen w-screen flex items-center justify-center text-slate-200">
-      
-      <div className="flex-col gap-3">
-        <div className="flex flex-row gap-3">
-          <div className="flex flex-col  gap-1">
-            
-          <MyCard
-              imgUrl= "https://media.istockphoto.com/id/1499410369/photo/warning-icon-on-a-digital-lcd-display-with-reflection.jpg?s=1024x1024&w=is&k=20&c=42vxbCN9iL3l7F1EGUmiLPFAg5lOIpmhh3d_LWWioYQ="
-              title="Rahul"
-              description={cardData.description}
-            />
-            
-          </div>
-          <div className="flex flex-col gap-1">
-          <JobCard
-            jobTitle="Software Engineer"
-            location="San Francisco,
-            CA"
-            description="We are looking for a skilled Software Engineer to join our team."    
-            />
-          </div>
-          <div className="flex flex-col gap-1">
-            <a
-              href="https://ui.shadcn.com/docs/installation/vite"
-              target="_blank"
-            >
-              <img src={shadcnLogo} className="logo shadcn" alt="ShadCN logo" />
-            </a>
-            <h1 className="text-3xl font-bold">Shadcn</h1>
-          </div>
 
-          <div className="flex flex-col gap-1">
-            <a href="https://tailwindcss.com/" target="_blank">
-              <img
-                src={tailWind}
-                className="logo tailwind"
-                alt="Tailwind css logo"
-              />
-            </a>
-            <h1 className="text-3xl font-bold text-[#2a8ac1]">Tailwind</h1>
-          </div>
-          <div className="flex flex-col gap-1">
-            <a href="https://reactrouter.com/en/main" target="_blank">
-              <img
-                src={router}
-                className="logo react-router-dom"
-                alt="JavaScript logo"
-              />
-            </a>
-            <h1 className="text-3xl font-bold">
-              <span className="text-red-500">
-                <span className="text-white">React </span> Router
-              </span>{" "}
-            </h1>
-          </div>
+          <Route path="/services">
+            <Route path="worksops" element={<Workshops />} />
+            <Route path="webinars" element={<Webinar />} />
+            <Route path="placementsupport" element={<Placements />} />
+            <Route path="internships" element={<Internships />} />
+          </Route>
 
-          <div className="flex flex-col gap-1">
-            <a href="https://www.javascript.com/" target="_blank">
-              <img src={jsLogo} className="logo js" alt="JavaScript logo" />
-            </a>
-            <h1 className="text-3xl font-bold text-yellow-400">Javascript</h1>
-          </div>
-        </div>
-        <br />
-        <h2 className="text-2xl  flex items-center flex-row gap-2">
-          Starter Template Prepared By{" "}
-          <a
-            className="font-bold text-amber-700"
-            href="https://ezoltech.netlify.app"
-          >
-            EzolTech
-          </a>
-        </h2>
-      </div>
-    </div>
+          <Route path="/4pprogram" >
+            <Route path="placement" element={<Placement />} />
+            <Route path="preparation" element={<Preparation />} />
+            <Route path="professional" element={<Professional />} />
+            <Route path="project" element={<Project />} />
+          </Route>
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 
 export default App;
