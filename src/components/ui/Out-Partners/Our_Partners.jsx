@@ -52,7 +52,7 @@ const Our_Partners = ({ imgArray }) => {
               <img
                 src={partner}
                 alt={`Partner ${index + 1}`}
-                className="w-full h-20 bg-center rounded-lg shadow-lg"
+                className="w-full h-24 object-cover bg-cover rounded-lg shadow-lg"
               />
             </div>
           ))}

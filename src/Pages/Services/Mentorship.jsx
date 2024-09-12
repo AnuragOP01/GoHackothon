@@ -1,16 +1,11 @@
 import React from 'react'
-import { FaChevronLeft } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 
-const StartUpProgram = () => {
+const Mentorship = () => {
   return (
     <div className='font-serif'>
-        <NavLink to="/home">
-          <div className="flex m-8">
-            <FaChevronLeft className="font-light text-5xl my-2 mx-2" />{" "}
-            <h1 className=" text-blue-600 font-bold">StartUp Mentorship Program</h1>
-          </div>
-          </NavLink>       <div className='bg-blue-500 w-full h-auto flex text-white'>
+       <NavLink to="/home"><h2 className='text-3xl m-10 text-blue-500'><i class="fa-solid fa-arrow-left"></i> StartUp Mentorship Program</h2></NavLink>   
+       <div className='bg-blue-500 w-full h-auto flex text-white'>
         <div className='w-2/4 m-auto '>
         <h1 className='text-5xl m-10'><span className='text-6xl'>G</span>row your </h1>
         <h1 className='text-5xl m-10'><span className='text-6xl'>S</span>tartup faster with 1:1 </h1>
@@ -49,5 +44,4 @@ const StartUpProgram = () => {
   )
 }
 
-export default StartUpProgram
- 
+export default Mentorship

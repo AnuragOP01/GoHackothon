@@ -252,6 +252,12 @@ const Navbar = () => {
                   Projects
                 </NavLink>
                 <NavLink
+                    to="/services/research"
+                    className="block hover:bg-blue-300 rounded-lg px-8 text-left p-2"
+                >
+                  Research
+                </NavLink>
+                <NavLink
                   to="/services/startup"
                   className="block hover:bg-blue-300 rounded-lg px-8 text-left p-2"
                 >

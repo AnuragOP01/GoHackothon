@@ -30,6 +30,9 @@ import Trainings from "./Pages/Services/Trainings";
 import Hackathons from "./Pages/Services/Hackathons";
 import Projects from "./Pages/Services/Projects";
 import StartUpProgram from "./Pages/Services/StartUpProgram";
+import Ourmentor from "./Pages/ourmentor/Ourmentor";
+import Research from "./Pages/Services/Research";
+
 
 function App() {
 
@@ -39,10 +42,12 @@ function App() {
         
         <Route path="/login" exact element={<Login />} />
         <Route path="/" element={<NavFooter />}>
+        <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/carrier" element={<Carrier />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/ourmentor" element={<Ourmentor />} />
 
 
           <Route path="/services">
@@ -53,7 +58,9 @@ function App() {
             <Route path="trainings" element={<Trainings />} />
             <Route path="hackathons" element={<Hackathons />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="research" element={<Research />} />
             <Route path="startup" element={<StartUpProgram />} />
+
           </Route>
 
           <Route path="/4pprogram" >
