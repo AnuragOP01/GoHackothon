@@ -267,7 +267,7 @@ const Navbar = () => {
 
           <li className="flex items-center">
             <NavLink to="/carrier" className=" hover:underline">
-              career
+              Career
             </NavLink>
           </li>
           <li className="flex items-center">
