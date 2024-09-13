@@ -8,11 +8,11 @@ import {
   CardContent,
 } from "./baseCard/card";
 
-const JobCard = ({ jobTitle, location, description }) => {
+const JobCard = ({title, location, description }) => {
   return (
     <Card className="flex flex-col p-4 max-w-md border-slate-900 border-opacity-70">
       <CardHeader>
-        <CardTitle className="font-bold">{jobTitle}</CardTitle>
+        <CardTitle className="font-bold">{title}</CardTitle>
         <CardDescription className="text-base text-gray-500">
           Location: {location}
         </CardDescription>

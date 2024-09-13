@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 const defaultPartners = [
-  "/../../../../public/router.svg",
-  "/images/partner2.png",
-  "/images/partner3.png",
-  "/images/partner4.png",
-  "/images/partner5.png",
+  '/src/assets/images/picture5.png',
+  '/src/assets/images/picture6.png',
+  '/src/assets/images/picture7.png',
+  '/src/assets/images/picture8.png',
+  '/src/assets/images/picture9.png',
 ];
 
 const Our_Partners = ({ imgArray }) => {
@@ -34,21 +34,16 @@ const Our_Partners = ({ imgArray }) => {
         {partners.map((_, index) => (
           <button
             key={index}
-            className={`w-4 h-4 rounded-full ${
-              index === currentIndex ? "bg-blue-600" : "bg-gray-300"
-            }`}
+            className={`w-4 h-4 rounded-full ${index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
             onClick={() => setCurrentIndex(index)}
             aria-label={`Slide ${index + 1}`}
-            style={{ border: "none" }} // Remove default border
+            style={{ border: 'none' }} // Remove default border
           ></button>
         ))}
       </div>
-      <h2 className="text-3xl font-bold text-center mb-6 text-blue-600">
-        Our Partners
-      </h2>
       <div className="relative overflow-hidden">
         <div
-          className="flex transition-transform duration-500"
+          className="flex transition-transform duration-500  mb-[20px]"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {partners.map((partner, index) => (
@@ -56,7 +51,8 @@ const Our_Partners = ({ imgArray }) => {
               <img
                 src={partner}
                 alt={`Partner ${index + 1}`}
-                className="w-full h-24 object-cover bg-cover rounded-lg shadow-lg"
+                className="w-auto h-[150px] object-contain rounded-lg  mx-auto"
+                // Adjust the height to 150px and maintain the aspect ratio
               />
             </div>
           ))}
@@ -66,7 +62,7 @@ const Our_Partners = ({ imgArray }) => {
           className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg"
           onClick={prevSlide}
           aria-label="Previous Slide"
-          style={{ fontSize: "1.5rem" }}
+          style={{ fontSize: '1.5rem' }}
         >
           &#10094;
         </button>
@@ -74,7 +70,7 @@ const Our_Partners = ({ imgArray }) => {
           className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg"
           onClick={nextSlide}
           aria-label="Next Slide"
-          style={{ fontSize: "1.5rem" }}
+          style={{ fontSize: '1.5rem' }}
         >
           &#10095;
         </button>

@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 const Menu = (props) => {
   return (
@@ -8,19 +7,19 @@ const Menu = (props) => {
         className={`w-full flex justify-around text-2xl mb-10 font-black ${props.className}`}
       >
         <li>
-          <NavLink to="#about">About Webinar</NavLink>
+          <a href="#about">About</a>
         </li>
         <li>
-          <NavLink to="#highlights">Webinar Highlights</NavLink>
+          <a href="#highlights">Highlights</a>
         </li>
         <li>
-          <NavLink to="#overview">Webinar Overview</NavLink>
+          <a href="#overview">Overview</a>
         </li>
         <li>
-          <NavLink to="#certificate">Certificate</NavLink>
+          <a href="#certificate">Certificate</a>
         </li>
         <li>
-          <NavLink to="#faqs">FAQs</NavLink>
+          <a href="#faqs">FAQs</a>
         </li>
       </ul>
     </>

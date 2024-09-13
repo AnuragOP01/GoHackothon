@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./../../../assets/images/Go-Hackthon.png";
 const Footer = () => {
   return (
-    <footer className="bg-[#E4EBF4] text-black py-8 w-full">
+    <footer className="bg-[#E4EBF4] text-black py-8 w-full font-serif">
       <div className="container mx-auto px-4">
         {/* Grid Layout for Footer */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">

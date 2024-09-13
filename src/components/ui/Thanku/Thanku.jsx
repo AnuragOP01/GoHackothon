@@ -5,7 +5,7 @@ const Thanku = (props) => {
     <div>
       <div className="text-xl text-center grid gap-y-4 m-40">
         <img
-          src="/src/assets/images/check copy.png"
+          src="/src/assets/images/check.png"
           className="h-40 w-40 m-auto"
         ></img>
         <h1 className="font-black">Thank you!</h1>

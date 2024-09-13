@@ -79,7 +79,7 @@ const About = () => {
           description="UI / UX DESIGNER"
         />
       </div>
-      <h1 className="text-center m-28">Our Partners</h1>
+      <h1 className="text-center m-28 ">Our Partners</h1>
       <div className="mb-28">
         <Our_Partners />
       </div>

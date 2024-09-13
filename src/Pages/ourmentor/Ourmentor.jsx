@@ -10,7 +10,7 @@ const Ourmentor = () => {
       <br></br>
       <Menu className="p-8" />
       <div className="bg-[url('/src/assets/images/frame.png')] bg-cover bg-no-repeat w-3/5 h-20 text-white flex items-center">
-        <h1 className="ml-14 text-4xl">Webinar Schedule</h1>
+        <h1 className="ml-14 text-4xl">Schedule</h1>
       </div>
       <div className="text-left m-12 text-4xl grid gap-y-2">
         <li>
@@ -29,19 +29,19 @@ const Ourmentor = () => {
       <div className="w-4/5 flex justify-between ml-64 m-10" id="about">
         <div></div>
         <div className="bg-[url('/src/assets/images/section-title-bg-odd.png')] bg-cover bg-no-repeat w-3/5 h-20 text-white flex items-center">
-          <h1 className="ml-44 text-4xl">About Webinar Mentor</h1>
+          <h1 className="ml-44 text-4xl">About Mentor</h1>
         </div>
       </div>
-      <Trainer image="/src/assets/images/trainer image.png" />
+      <Trainer image="/src/assets/images/trainer image.png" className="mt-28" />
       <div
         className="bg-[url('/src/assets/images/frame.png')] bg-cover bg-no-repeat w-3/5 h-20 text-white flex items-center"
         id="highlights"
       >
-        <h1 className="ml-14 text-4xl">Webinar Highlights</h1>
+        <h1 className="ml-14 text-4xl">Highlights</h1>
       </div>
-      <div className="text-left m-12 ml-32 text-2xl grid gap-y-2 list-none items-center">
+      <div className="text-left m-12 ml-32 text-4xl grid gap-y-2 list-none items-center mb-32">
         <li>
-          <i class="fa-solid fa-check text-blue-600"></i> Introduction and
+          <i class="fa-solid fa-check text-blue-600 mt-20"></i> Introduction and
           welcome
         </li>
         <li>
@@ -63,13 +63,13 @@ const Ourmentor = () => {
 
       <div
         className="bg-[url('/src/assets/images/frame.png')] bg-cover bg-no-repeat w-3/5 h-20 text-white flex items-center"
-        id="highlights"
+        id="overview"
       >
         <h1 className="ml-14 text-4xl">What you’ll get</h1>
       </div>
-      <div className="text-left m-12 ml-32 text-2xl grid gap-y-2 list-none items-center">
+      <div className="text-left m-12 ml-32 text-4xl grid gap-y-2 list-none items-center mb-24">
         <li>
-          <i class="fa-solid fa-check text-blue-600"></i> Learn from experts and
+          <i class="fa-solid fa-check text-blue-600 mt-14"></i> Learn from experts and
           gain insights
         </li>
         <li>
@@ -100,7 +100,7 @@ const Ourmentor = () => {
       </div>
       <img
         src="/src/assets/images/certificate.jpg"
-        className="m-auto mt-20 mb-20 border-blue-600 border-2 rounded-xl h-96"
+        className="m-auto mt-20 mb-20 rounded-xl h-96"
       ></img>
       <div className="text-center" id="faqs">
         <Button text="FAQs" className="p-8" />

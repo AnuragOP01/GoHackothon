@@ -20,13 +20,9 @@ import Testing from "./Pages/Training/AdvancedLearning/Testing";
 import Java from "./Pages/Training/FullStack/Java";
 import Python from "./Pages/Training/FullStack/Python";
 import Mern from "./Pages/Training/FullStack/Mern";
-import Communication from "./Pages/Training/Professionals/Communication";
-import UniversityEntry from "./Pages/Training/Professionals/UniversityEntry";
-import UniversityFinish from "./Pages/Training/Professionals/UniversityFinish";
 import Figma from "./Pages/Training/UiUx/Figma";
 import HtmlCss from "./Pages/Training/UiUx/HtmlCss";
 import ReactUi from "./Pages/Training/UiUx/ReactUi";
-import Trainings from "./Pages/Services/Trainings";
 import Hackathons from "./Pages/Services/Hackathons";
 import Projects from "./Pages/Services/Projects";
 import StartUpProgram from "./Pages/Services/StartUpProgram";
@@ -35,7 +31,6 @@ import Research from "./Pages/Services/Research";
 import Register from "./components/ui/Register/Register";
 import Thanku from "./components/ui/Thanku/Thanku";
 import Reviews from "./components/ui/Trainer/Reviews";
-
 function App() {
   return (
     <BrowserRouter>
@@ -54,7 +49,6 @@ function App() {
             <Route path="webinars" element={<Webinar />} />
             <Route path="placementsupport" element={<Placements />} />
             <Route path="internships" element={<Internships />} />
-            <Route path="trainings" element={<Trainings />} />
             <Route path="hackathons" element={<Hackathons />} />
             <Route path="projects" element={<Projects />} />
             <Route path="research" element={<Research />} />
@@ -82,12 +76,6 @@ function App() {
             <Route path="java" element={<Java />} />
             <Route path="python" element={<Python />} />
             <Route path="mern" element={<Mern />} />
-          </Route>
-
-          <Route path="/professionals">
-            <Route path="communicate" element={<Communication />} />
-            <Route path="entryprogram" element={<UniversityEntry />} />
-            <Route path="finishprogram" element={<UniversityFinish />} />
           </Route>
 
           <Route path="/uiux">

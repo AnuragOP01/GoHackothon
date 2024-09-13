@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="Navbar mt-10 flex justify-around relative">
+    <div className="Navbar mt-10 flex justify-around relative font-serif">
       <img
         src={goLogo}
         alt="hg"
@@ -45,9 +45,9 @@ const Navbar = () => {
           >
             Training{" "}
             {trainingOpen ? (
-              <FaChevronDown className="text-sm ml-1" />
+               <FaChevronUp className="text-sm ml-1" />
             ) : (
-              <FaChevronUp className="text-sm ml-1" />
+              <FaChevronDown className="text-sm ml-1" />
             )}
             {/* Dropdown Menu */}
             {trainingOpen && (
@@ -206,9 +206,9 @@ const Navbar = () => {
           >
             Services{" "}
             {servicesOpen ? (
-              <FaChevronDown className="text-sm ml-1" />
-            ) : (
               <FaChevronUp className="text-sm ml-1" />
+            ) : (
+              <FaChevronDown className="text-sm ml-1" />
             )}
             {/* Dropdown Menu */}
             {servicesOpen && (
@@ -267,7 +267,7 @@ const Navbar = () => {
 
           <li className="flex items-center">
             <NavLink to="/carrier" className=" hover:underline">
-              carrier
+              career
             </NavLink>
           </li>
           <li className="flex items-center">
@@ -276,9 +276,11 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="flex items-center">
+          <NavLink to="/login" className="hover:underline">
             <button className="bg-white text-[#0071D1] px-4 py-2 rounded-[10px]">
               Log In/Sign Up
             </button>
+          </NavLink>
           </li>
         </ul>
       </nav>
